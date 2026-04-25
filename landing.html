@@ -114,6 +114,21 @@
         transform-origin: 0 0;
       }
 
+      /* Legacy iPad fallback: bypass scaled stage to prevent blank render. */
+      body.legacy-ipad .deck-shell {
+        position: fixed;
+        inset: 0;
+        overflow: hidden;
+      }
+      body.legacy-ipad .deck-stage {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        height: 100%;
+        transform: none !important;
+      }
+
       .deck {
         position: relative;
         width: 100%;
@@ -2237,6 +2252,9 @@
         gap: 10px;
         pointer-events: none;
       }
+      body.legacy-ipad .deck-nav {
+        position: fixed;
+      }
 
       .deck-nav__btn {
         pointer-events: auto;
@@ -4255,6 +4273,11 @@
         const emailLightboxScrim = document.getElementById(
           "email-lightbox-scrim",
         );
+        const userAgent = navigator.userAgent || "";
+        const isClassicIPad = /iPad/i.test(userAgent);
+        const isIPadDesktop =
+          navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1;
+        const isLegacyIPad = isClassicIPad || isIPadDesktop;
 
         const prefersReduced = window.matchMedia(
           "(prefers-reduced-motion: reduce)",
@@ -5341,38 +5364,15 @@
         setupEmailLightbox();
         resetChallenge();
         setSlideState(0);
-        try {
-          fitDeckToViewport();
-        } catch (err) {}
-        window.addEventListener(
-          "resize",
-          () => {
+        if (isLegacyIPad) {
+          document.body.classList.add("legacy-ipad");
+        } else {
+          try {
             try {
               fitDeckToViewport();
             } catch (err) {}
-          },
-          { passive: true },
-        );
-        window.addEventListener(
-          "orientationchange",
-          () => {
-            try {
-              fitDeckToViewport();
-            } catch (err) {}
-          },
-          { passive: true },
-        );
-        window.addEventListener(
-          "pageshow",
-          () => {
-            try {
-              fitDeckToViewport();
-            } catch (err) {}
-          },
-          { passive: true },
-        );
-        if (window.visualViewport) {
-          window.visualViewport.addEventListener(
+          } catch (err) {}
+          window.addEventListener(
             "resize",
             () => {
               try {
@@ -5381,17 +5381,46 @@
             },
             { passive: true },
           );
+          window.addEventListener(
+            "orientationchange",
+            () => {
+              try {
+                fitDeckToViewport();
+              } catch (err) {}
+            },
+            { passive: true },
+          );
+          window.addEventListener(
+            "pageshow",
+            () => {
+              try {
+                fitDeckToViewport();
+              } catch (err) {}
+            },
+            { passive: true },
+          );
+          if (window.visualViewport) {
+            window.visualViewport.addEventListener(
+              "resize",
+              () => {
+                try {
+                  fitDeckToViewport();
+                } catch (err) {}
+              },
+              { passive: true },
+            );
+          }
+          window.setTimeout(() => {
+            try {
+              fitDeckToViewport();
+            } catch (err) {}
+          }, 30);
+          window.setTimeout(() => {
+            try {
+              fitDeckToViewport();
+            } catch (err) {}
+          }, 220);
         }
-        window.setTimeout(() => {
-          try {
-            fitDeckToViewport();
-          } catch (err) {}
-        }, 30);
-        window.setTimeout(() => {
-          try {
-            fitDeckToViewport();
-          } catch (err) {}
-        }, 220);
       })();
     </script>
   </body>
