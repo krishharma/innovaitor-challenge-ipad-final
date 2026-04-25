@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="720" viewBox="0 0 960 720" role="img" aria-label="Screenshot placeholder">
+  <rect width="960" height="720" fill="#f4f0e6"/>
+  <rect x="36" y="36" width="888" height="648" rx="18" fill="none" stroke="#cfc4b0" stroke-width="3" stroke-dasharray="16 12"/>
+  <text x="480" y="340" text-anchor="middle" font-family="ui-sans-serif,system-ui,sans-serif" font-size="32" fill="#6b6358">Screenshot</text>
+  <text x="480" y="388" text-anchor="middle" font-family="ui-sans-serif,system-ui,sans-serif" font-size="18" fill="#9a9288">Replace this image in landing.html</text>
+</svg>
