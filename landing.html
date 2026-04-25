@@ -2438,19 +2438,22 @@
         min-height: -webkit-fill-available;
       }
       html.touch-like-deck body {
-        min-height: 100%;
-        min-height: -webkit-fill-available;
-        height: auto;
-        max-height: none;
-      }
-      html.touch-like-deck .deck {
-        perspective: none;
-        height: auto;
         min-height: 100vh;
         min-height: 100svh;
         min-height: 100dvh;
         min-height: -webkit-fill-available;
-        max-height: none;
+        height: 100vh;
+        height: 100svh;
+        height: 100dvh;
+        max-height: 100vh;
+        max-height: 100svh;
+        max-height: 100dvh;
+      }
+      html.touch-like-deck .deck {
+        perspective: none;
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
       }
       html.touch-like-deck .slide::after,
       html.touch-like-deck .panel-art__blob,
