@@ -2438,22 +2438,19 @@
         min-height: -webkit-fill-available;
       }
       html.touch-like-deck body {
+        min-height: 100%;
+        min-height: -webkit-fill-available;
+        height: auto;
+        max-height: none;
+      }
+      html.touch-like-deck .deck {
+        perspective: none;
+        height: auto;
         min-height: 100vh;
         min-height: 100svh;
         min-height: 100dvh;
         min-height: -webkit-fill-available;
-        height: 100vh;
-        height: 100svh;
-        height: 100dvh;
-        max-height: 100vh;
-        max-height: 100svh;
-        max-height: 100dvh;
-      }
-      html.touch-like-deck .deck {
-        perspective: none;
-        height: 100%;
-        min-height: 100%;
-        max-height: 100%;
+        max-height: none;
       }
       html.touch-like-deck .slide::after,
       html.touch-like-deck .panel-art__blob,
@@ -2515,7 +2512,7 @@
         border: 0;
       }
 
-      @media (max-width: 760px) {
+      @media (orientation: portrait), (max-width: 820px) {
         .slide {
           grid-template-columns: 1fr;
           /* min height on row 1 avoids WebKit collapsing the content row to 0 on iPad */
@@ -2644,7 +2641,7 @@
         }
       }
 
-      @media (max-width: 760px) {
+      @media (max-width: 900px) {
         :root {
           --slide-panel: min(46%, min(300px, 50vw));
         }
@@ -4271,8 +4268,22 @@
         function fitDeckToViewport() {
           if (!deckStage) return;
           const vv = window.visualViewport;
-          const viewportWidth = vv ? vv.width : window.innerWidth;
-          const viewportHeight = vv ? vv.height : window.innerHeight;
+          const innerW = window.innerWidth || 0;
+          const innerH = window.innerHeight || 0;
+          const docEl = document.documentElement;
+          const docW = docEl ? docEl.clientWidth : 0;
+          const docH = docEl ? docEl.clientHeight : 0;
+          const vvW = vv && Number.isFinite(vv.width) ? vv.width : 0;
+          const vvH = vv && Number.isFinite(vv.height) ? vv.height : 0;
+
+          // Older iPad Safari can report transient tiny/zero visualViewport values.
+          const candidateWidths = [innerW, docW];
+          const candidateHeights = [innerH, docH];
+          if (vvW > 240) candidateWidths.push(vvW);
+          if (vvH > 240) candidateHeights.push(vvH);
+          const viewportWidth = Math.max(...candidateWidths, 1);
+          const viewportHeight = Math.max(...candidateHeights, 1);
+
           const designWidth = 1366;
           const designHeight = 1024;
           const scale = Math.max(
