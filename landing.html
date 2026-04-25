@@ -1194,13 +1194,9 @@
         height: auto;
         min-height: 100%;
         display: grid;
-        grid-template-columns: minmax(0, 1fr) clamp(
-            120px,
-            min(17vw, 14dvh),
-            240px
-          );
+        grid-template-columns: minmax(0, 1fr);
         align-items: stretch;
-        column-gap: clamp(10px, 1.6vw, 24px);
+        column-gap: 0;
       }
       .slide--b {
         overflow-y: auto;
@@ -3267,17 +3263,6 @@
                   </div>
                 </div>
               </section>
-              <aside class="challenge-brand-rail" aria-hidden="true">
-                <div class="challenge-brand-tile">
-                  <img src="logos/mint-wordmark.png" alt="" />
-                </div>
-                <div class="challenge-brand-tile">
-                  <img src="logos/greatclips-wordmark.png" alt="" />
-                </div>
-                <div class="challenge-brand-tile">
-                  <img src="logos/ntooitive-mark.png" alt="" />
-                </div>
-              </aside>
             </div>
           </section>
 
