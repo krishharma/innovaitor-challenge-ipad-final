@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>InnovAItor Challenge - Lite</title>
+  <style>
+    :root {
+      --bg: #fdf6e3;
+      --ink: #1f1d1a;
+      --line: rgba(31, 29, 26, 0.12);
+      --card: #fff;
+      --accent: #f6c945;
+      --border: #2f2a24;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    body {
+      background-image:
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+    .wrap {
+      width: min(1200px, 100%);
+      margin: 0 auto;
+      padding: 20px clamp(12px, 3vw, 24px) 48px;
+    }
+    .tag {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 6px 10px;
+      border: 2px solid var(--border);
+      border-radius: 999px;
+      background: var(--accent);
+      margin-bottom: 10px;
+    }
+    h1, h2 {
+      margin: 0 0 14px;
+      line-height: 1.1;
+    }
+    h1 { font-size: clamp(34px, 5.2vw, 64px); }
+    h2 { font-size: clamp(26px, 3.8vw, 44px); }
+    p { margin: 0 0 14px; line-height: 1.5; }
+    .panel {
+      margin-top: 24px;
+      border: 3px solid var(--border);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.75);
+      padding: clamp(14px, 2vw, 20px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+    }
+    .hero {
+      display: grid;
+      gap: 14px;
+    }
+    .hero img {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid #3a342f;
+      background: #fff;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .shot {
+      border: 2px solid #3a342f;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .shot img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 16/10;
+      object-fit: contain;
+      background: #fff;
+    }
+    .shot figcaption {
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 10px;
+      border-top: 1px solid #ddd;
+    }
+    .end {
+      text-align: center;
+      font-size: clamp(36px, 8vw, 80px);
+      font-weight: 800;
+      color: #3573c8;
+      margin-top: 28px;
+    }
+    @media (max-width: 900px) {
+      .grid-3 { grid-template-columns: 1fr; }
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="panel hero">
+      <span class="tag">DECA Project Management 2026</span>
+      <h1>The InnovAItor Challenge</h1>
+      <p>Lightweight iPad-safe website mode.</p>
+      <img src="gallery/image 3.png" alt="InnovAItor presentation scene" />
+    </section>
+
+    <section class="panel">
+      <span class="tag">Project Management Software Tools and Uses</span>
+      <h2>Tools In Action</h2>
+      <div class="grid-2">
+        <figure class="shot"><img src="gallery/google-sheets-in-use.png" alt="Google Sheets in use" /><figcaption>Google Sheets</figcaption></figure>
+        <figure class="shot"><img src="gallery/google-forms-in-use.png" alt="Google Forms in use" /><figcaption>Google Forms</figcaption></figure>
+        <figure class="shot"><img src="gallery/slack-in-use.png" alt="Slack in use" /><figcaption>Slack</figcaption></figure>
+        <figure class="shot"><img src="gallery/notion-in-use.png" alt="Notion in use" /><figcaption>Notion</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="panel">
+      <span class="tag">Outcomes and Impact</span>
+      <h2>Evaluating Project Results - Beyond the Numbers</h2>
+      <div class="grid-3">
+        <figure class="shot"><img src="gallery/email-screenshot-1.png" alt="Email screenshot 1" /><figcaption>Email Screenshot 1</figcaption></figure>
+        <figure class="shot"><img src="gallery/email-screenshot-2.png" alt="Email screenshot 2" /><figcaption>Email Screenshot 2</figcaption></figure>
+        <figure class="shot"><img src="gallery/email-screenshot-3.png" alt="Email screenshot 3" /><figcaption>Email Screenshot 3</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="end">Thank You</section>
+  </main>
+</body>
+</html>
