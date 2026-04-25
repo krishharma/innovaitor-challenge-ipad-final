@@ -885,6 +885,15 @@
         background-size: cover;
         background-repeat: no-repeat;
       }
+      .thank-you-bg--img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        display: block;
+      }
       .thank-you-vignette {
         position: absolute;
         inset: 0;
@@ -4107,10 +4116,12 @@
             aria-hidden="true"
           >
             <div class="thank-you-stage">
-              <div
-                class="thank-you-bg thank-you-bg--collage"
+              <img
+                class="thank-you-bg--img"
+                src="thank-you-collage.png"
+                alt=""
                 aria-hidden="true"
-              ></div>
+              />
               <div class="thank-you-vignette" aria-hidden="true"></div>
             </div>
             <div class="content thank-you-content">
