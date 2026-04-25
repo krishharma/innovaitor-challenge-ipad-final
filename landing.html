@@ -327,7 +327,7 @@
         letter-spacing: -0.03em;
         color: var(--ink);
         text-shadow: 3px 3px 0 rgba(255, 255, 255, 0.75);
-        white-space: nowrap;
+        white-space: normal;
         overflow-wrap: anywhere;
       }
       .software-tools-slide .content {
@@ -1191,7 +1191,8 @@
         max-width: none;
         width: 100%;
         min-height: 0;
-        height: 100%;
+        height: auto;
+        min-height: 100%;
         display: grid;
         grid-template-columns: minmax(0, 1fr) clamp(
             120px,
@@ -1200,6 +1201,10 @@
           );
         align-items: stretch;
         column-gap: clamp(10px, 1.6vw, 24px);
+      }
+      .slide--b {
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
       }
       .challenge-brand-rail {
         position: relative;
@@ -2879,8 +2884,6 @@
                 </li>
               </ul>
             </div>
-
-            <p class="footer-hint">Use the arrow to turn the page →</p>
           </section>
 
           <section
