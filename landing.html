@@ -4273,16 +4273,30 @@
           const docEl = document.documentElement;
           const docW = docEl ? docEl.clientWidth : 0;
           const docH = docEl ? docEl.clientHeight : 0;
-          const vvW = vv && Number.isFinite(vv.width) ? vv.width : 0;
-          const vvH = vv && Number.isFinite(vv.height) ? vv.height : 0;
+          const vvW =
+            vv && typeof vv.width === "number" && isFinite(vv.width)
+              ? vv.width
+              : 0;
+          const vvH =
+            vv && typeof vv.height === "number" && isFinite(vv.height)
+              ? vv.height
+              : 0;
 
           // Older iPad Safari can report transient tiny/zero visualViewport values.
           const candidateWidths = [innerW, docW];
           const candidateHeights = [innerH, docH];
           if (vvW > 240) candidateWidths.push(vvW);
           if (vvH > 240) candidateHeights.push(vvH);
-          const viewportWidth = Math.max(...candidateWidths, 1);
-          const viewportHeight = Math.max(...candidateHeights, 1);
+          let viewportWidth = 1;
+          let viewportHeight = 1;
+          for (let i = 0; i < candidateWidths.length; i += 1) {
+            if (candidateWidths[i] > viewportWidth)
+              viewportWidth = candidateWidths[i];
+          }
+          for (let i = 0; i < candidateHeights.length; i += 1) {
+            if (candidateHeights[i] > viewportHeight)
+              viewportHeight = candidateHeights[i];
+          }
 
           const designWidth = 1366;
           const designHeight = 1024;
@@ -5326,22 +5340,58 @@
         setupSoftwareTools();
         setupEmailLightbox();
         resetChallenge();
-        fitDeckToViewport();
-        window.addEventListener("resize", fitDeckToViewport, { passive: true });
-        window.addEventListener("orientationchange", fitDeckToViewport, {
-          passive: true,
-        });
-        window.addEventListener("pageshow", fitDeckToViewport, {
-          passive: true,
-        });
-        if (window.visualViewport) {
-          window.visualViewport.addEventListener("resize", fitDeckToViewport, {
-            passive: true,
-          });
-        }
-        window.setTimeout(fitDeckToViewport, 30);
-        window.setTimeout(fitDeckToViewport, 220);
         setSlideState(0);
+        try {
+          fitDeckToViewport();
+        } catch (err) {}
+        window.addEventListener(
+          "resize",
+          () => {
+            try {
+              fitDeckToViewport();
+            } catch (err) {}
+          },
+          { passive: true },
+        );
+        window.addEventListener(
+          "orientationchange",
+          () => {
+            try {
+              fitDeckToViewport();
+            } catch (err) {}
+          },
+          { passive: true },
+        );
+        window.addEventListener(
+          "pageshow",
+          () => {
+            try {
+              fitDeckToViewport();
+            } catch (err) {}
+          },
+          { passive: true },
+        );
+        if (window.visualViewport) {
+          window.visualViewport.addEventListener(
+            "resize",
+            () => {
+              try {
+                fitDeckToViewport();
+              } catch (err) {}
+            },
+            { passive: true },
+          );
+        }
+        window.setTimeout(() => {
+          try {
+            fitDeckToViewport();
+          } catch (err) {}
+        }, 30);
+        window.setTimeout(() => {
+          try {
+            fitDeckToViewport();
+          } catch (err) {}
+        }, 220);
       })();
     </script>
   </body>
