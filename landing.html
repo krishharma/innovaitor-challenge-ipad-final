@@ -37,8 +37,6 @@
     />
     <style>
       :root {
-        --design-width: 1366;
-        --design-height: 1024;
         --paper: #fdf6e3;
         --paper-2: #fff8e7;
         --ink: #1f1d1a;
@@ -97,21 +95,6 @@
         -webkit-font-smoothing: antialiased;
         overflow: hidden;
         touch-action: manipulation;
-      }
-
-      .deck-shell {
-        position: fixed;
-        inset: 0;
-        overflow: hidden;
-      }
-
-      .deck-stage {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: calc(var(--design-width) * 1px);
-        height: calc(var(--design-height) * 1px);
-        transform-origin: 0 0;
       }
 
       .deck {
@@ -2699,1457 +2682,1410 @@
     </style>
   </head>
   <body>
-    <div id="deck-shell" class="deck-shell">
-      <div id="deck-stage" class="deck-stage">
-        <div id="deck" class="deck" data-slide="0">
+    <div id="deck" class="deck" data-slide="0">
+      <section
+        class="slide slide--a is-active"
+        id="slide-a"
+        aria-roledescription="slide"
+        aria-label="1 of 5: Title"
+        aria-hidden="false"
+      >
+        <h1 class="sr-only">
+          The InnovAItor Challenge — DECA Project Management 2026
+        </h1>
+        <div class="margin-rail" aria-hidden="true"></div>
+
+        <div class="content">
+          <p class="eyebrow">DECA Project Management 2026</p>
+
+          <ul class="headline" aria-hidden="true">
+            <li class="headline__the">The</li>
+            <li class="headline__brand">
+              <span class="headline__brand-inner">InnovAItor</span>
+            </li>
+            <li class="headline__challenge">Challenge</li>
+          </ul>
+        </div>
+
+        <div
+          class="panel-art panel-art--gallery"
+          role="region"
+          aria-label="Photo gallery: classrooms, presentations, partners, and community"
+        >
+          <ul class="gallery-grid">
+            <li>
+              <img
+                src="gallery/gallery-01.png"
+                alt=""
+                loading="eager"
+                decoding="async"
+                width="512"
+                height="512"
+              />
+            </li>
+            <li>
+              <img
+                src="gallery/gallery-02.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                width="512"
+                height="512"
+              />
+            </li>
+            <li>
+              <img
+                src="gallery/gallery-03.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                width="512"
+                height="512"
+              />
+            </li>
+            <li>
+              <img
+                src="gallery/gallery-04.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                width="512"
+                height="512"
+              />
+            </li>
+            <li>
+              <img
+                src="gallery/gallery-05.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                width="512"
+                height="512"
+              />
+            </li>
+            <li>
+              <img
+                src="gallery/gallery-06.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                width="512"
+                height="512"
+              />
+            </li>
+            <li>
+              <img
+                src="gallery/gallery-07.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                width="512"
+                height="512"
+              />
+            </li>
+            <li>
+              <img
+                src="gallery/gallery-08.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                width="512"
+                height="512"
+              />
+            </li>
+            <li>
+              <img
+                src="gallery/gallery-09.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                width="512"
+                height="512"
+              />
+            </li>
+            <li>
+              <img
+                src="gallery/gallery-10.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                width="512"
+                height="512"
+              />
+            </li>
+            <li>
+              <img
+                src="gallery/gallery-11.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                width="512"
+                height="512"
+              />
+            </li>
+            <li>
+              <img
+                src="gallery/gallery-12.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                width="512"
+                height="512"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <p class="footer-hint">Use the arrow to turn the page →</p>
+      </section>
+
+      <section
+        class="slide slide--b"
+        id="slide-b"
+        aria-roledescription="slide"
+        aria-label="2 of 5: Business Challenge Interactive"
+        aria-hidden="true"
+      >
+        <h2 class="sr-only">
+          Business Challenge Interactive — Mint Indian Bistro
+        </h2>
+        <div class="margin-rail" aria-hidden="true"></div>
+
+        <div class="content">
           <section
-            class="slide slide--a is-active"
-            id="slide-a"
-            aria-roledescription="slide"
-            aria-label="1 of 5: Title"
-            aria-hidden="false"
+            id="challenge-lab"
+            class="challenge-lab"
+            aria-label="Business Challenge Interactive"
           >
-            <h1 class="sr-only">
-              The InnovAItor Challenge — DECA Project Management 2026
-            </h1>
-            <div class="margin-rail" aria-hidden="true"></div>
-
-            <div class="content">
-              <p class="eyebrow">DECA Project Management 2026</p>
-
-              <ul class="headline" aria-hidden="true">
-                <li class="headline__the">The</li>
-                <li class="headline__brand">
-                  <span class="headline__brand-inner">InnovAItor</span>
-                </li>
-                <li class="headline__challenge">Challenge</li>
-              </ul>
+            <div class="challenge-lab__top">
+              <div>
+                <span class="challenge-lab__label"
+                  ><span class="challenge-lab__label-dot"></span>Real Business
+                  Challenge</span
+                >
+                <h3 class="challenge-lab__title">
+                  Choose A Business Challenge To Explore
+                </h3>
+                <p class="challenge-lab__sub">
+                  Choose a challenge to view three student projects written for
+                  that prompt.
+                </p>
+              </div>
             </div>
 
-            <div
-              class="panel-art panel-art--gallery"
-              role="region"
-              aria-label="Photo gallery: classrooms, presentations, partners, and community"
-            >
-              <ul class="gallery-grid">
-                <li>
-                  <img
-                    src="gallery/gallery-01.png"
-                    alt=""
-                    loading="eager"
-                    decoding="async"
-                    width="512"
-                    height="512"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="gallery/gallery-02.png"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    width="512"
-                    height="512"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="gallery/gallery-03.png"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    width="512"
-                    height="512"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="gallery/gallery-04.png"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    width="512"
-                    height="512"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="gallery/gallery-05.png"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    width="512"
-                    height="512"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="gallery/gallery-06.png"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    width="512"
-                    height="512"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="gallery/gallery-07.png"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    width="512"
-                    height="512"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="gallery/gallery-08.png"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    width="512"
-                    height="512"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="gallery/gallery-09.png"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    width="512"
-                    height="512"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="gallery/gallery-10.png"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    width="512"
-                    height="512"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="gallery/gallery-11.png"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    width="512"
-                    height="512"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="gallery/gallery-12.png"
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    width="512"
-                    height="512"
-                  />
-                </li>
-              </ul>
-            </div>
+            <div class="challenge-lab__body">
+              <article class="challenge-screen is-active" data-screen="select">
+                <div
+                  class="challenge-select-grid"
+                  id="challenge-select-grid"
+                ></div>
+              </article>
 
-            <p class="footer-hint">Use the arrow to turn the page →</p>
-          </section>
-
-          <section
-            class="slide slide--b"
-            id="slide-b"
-            aria-roledescription="slide"
-            aria-label="2 of 5: Business Challenge Interactive"
-            aria-hidden="true"
-          >
-            <h2 class="sr-only">
-              Business Challenge Interactive — Mint Indian Bistro
-            </h2>
-            <div class="margin-rail" aria-hidden="true"></div>
-
-            <div class="content">
-              <section
-                id="challenge-lab"
-                class="challenge-lab"
-                aria-label="Business Challenge Interactive"
-              >
-                <div class="challenge-lab__top">
-                  <div>
-                    <span class="challenge-lab__label"
-                      ><span class="challenge-lab__label-dot"></span>Real
-                      Business Challenge</span
-                    >
-                    <h3 class="challenge-lab__title">
-                      Choose A Business Challenge To Explore
-                    </h3>
-                    <p class="challenge-lab__sub">
-                      Choose a challenge to view three student projects written
-                      for that prompt.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="challenge-lab__body">
-                  <article
-                    class="challenge-screen is-active"
-                    data-screen="select"
+              <article class="challenge-screen" data-screen="detail">
+                <span class="detail-selected-tag"
+                  >Selected Challenge:<strong id="detail-business"
+                    >Mint Indian Bistro</strong
+                  ></span
+                >
+                <div id="detail-prompt" class="detail-prompt"></div>
+                <section
+                  class="detail-student-projects"
+                  id="detail-student-projects"
+                  aria-labelledby="detail-student-projects-heading"
+                >
+                  <h4
+                    id="detail-student-projects-heading"
+                    class="detail-student-projects__title"
                   >
-                    <div
-                      class="challenge-select-grid"
-                      id="challenge-select-grid"
-                    ></div>
-                  </article>
-
-                  <article class="challenge-screen" data-screen="detail">
-                    <span class="detail-selected-tag"
-                      >Selected Challenge:<strong id="detail-business"
-                        >Mint Indian Bistro</strong
-                      ></span
-                    >
-                    <div id="detail-prompt" class="detail-prompt"></div>
-                    <section
-                      class="detail-student-projects"
-                      id="detail-student-projects"
-                      aria-labelledby="detail-student-projects-heading"
-                    >
-                      <h4
-                        id="detail-student-projects-heading"
-                        class="detail-student-projects__title"
-                      >
-                        Look At Student Projects
-                      </h4>
-                      <div
-                        class="detail-student-projects__grid"
-                        id="detail-student-projects-grid"
-                      ></div>
-                    </section>
-                    <section
-                      class="ntooitive-showcase"
-                      id="ntooitive-showcase"
-                      aria-label="Featured Ntooitive Solution"
-                    >
-                      <span class="ntooitive-showcase__label"
-                        >Selected Challenge: Ntooitive</span
-                      >
-                      <h4 class="ntooitive-showcase__title">
-                        Featured Solution
-                      </h4>
-                      <p class="ntooitive-showcase__subtitle">
-                        AI Content Multiplier System
-                      </p>
-                      <div class="ntooitive-showcase__body">
-                        <section class="nt-card nt-info-card">
-                          <div class="nt-explain-row">
-                            <h6>AI Content Multiplier System</h6>
-                            <p>
-                              Small businesses often struggle to create
-                              consistent marketing content without spending more
-                              money. This team designed an AI-powered system
-                              that turns one photo, review, or short video into
-                              multiple ready-to-post marketing assets.
-                            </p>
-                          </div>
-                          <div class="nt-explain-row">
-                            <h6>The Problem</h6>
-                            <p>
-                              Small businesses need more content, but often do
-                              not have the time, staff, or budget to create it
-                              consistently.
-                            </p>
-                          </div>
-                          <div class="nt-explain-row">
-                            <h6>The Solution</h6>
-                            <p>
-                              The system turns one piece of content into
-                              captions, social posts, email blurbs, and Google
-                              Business updates.
-                            </p>
-                          </div>
-                          <div class="nt-explain-row">
-                            <h6>Why It Works</h6>
-                            <p>
-                              It helps businesses post more often, reach more
-                              customers, and improve engagement without
-                              increasing advertising costs.
-                            </p>
-                          </div>
-                          <div class="nt-mini-flow">
-                            1 Input → AI → 5 Marketing Posts
-                          </div>
-                        </section>
+                    Look At Student Projects
+                  </h4>
+                  <div
+                    class="detail-student-projects__grid"
+                    id="detail-student-projects-grid"
+                  ></div>
+                </section>
+                <section
+                  class="ntooitive-showcase"
+                  id="ntooitive-showcase"
+                  aria-label="Featured Ntooitive Solution"
+                >
+                  <span class="ntooitive-showcase__label"
+                    >Selected Challenge: Ntooitive</span
+                  >
+                  <h4 class="ntooitive-showcase__title">Featured Solution</h4>
+                  <p class="ntooitive-showcase__subtitle">
+                    AI Content Multiplier System
+                  </p>
+                  <div class="ntooitive-showcase__body">
+                    <section class="nt-card nt-info-card">
+                      <div class="nt-explain-row">
+                        <h6>AI Content Multiplier System</h6>
+                        <p>
+                          Small businesses often struggle to create consistent
+                          marketing content without spending more money. This
+                          team designed an AI-powered system that turns one
+                          photo, review, or short video into multiple
+                          ready-to-post marketing assets.
+                        </p>
+                      </div>
+                      <div class="nt-explain-row">
+                        <h6>The Problem</h6>
+                        <p>
+                          Small businesses need more content, but often do not
+                          have the time, staff, or budget to create it
+                          consistently.
+                        </p>
+                      </div>
+                      <div class="nt-explain-row">
+                        <h6>The Solution</h6>
+                        <p>
+                          The system turns one piece of content into captions,
+                          social posts, email blurbs, and Google Business
+                          updates.
+                        </p>
+                      </div>
+                      <div class="nt-explain-row">
+                        <h6>Why It Works</h6>
+                        <p>
+                          It helps businesses post more often, reach more
+                          customers, and improve engagement without increasing
+                          advertising costs.
+                        </p>
+                      </div>
+                      <div class="nt-mini-flow">
+                        1 Input → AI → 5 Marketing Posts
                       </div>
                     </section>
-                    <section
-                      class="ntooitive-showcase greatclips-showcase"
-                      id="greatclips-showcase"
-                      aria-label="Featured Great Clips solution"
-                    >
-                      <span class="ntooitive-showcase__label"
-                        >Selected Challenge: Great Clips</span
-                      >
-                      <h4 class="ntooitive-showcase__title">
-                        Featured Solution
-                      </h4>
-                      <p class="ntooitive-showcase__subtitle">
-                        FirstVisit AI: Smart Customer Retention System
-                      </p>
-                      <div class="ntooitive-showcase__body">
-                        <section class="nt-card nt-info-card">
-                          <div class="nt-explain-row">
-                            <h6>
-                              FirstVisit AI: Smart Customer Retention System
-                            </h6>
-                            <p>
-                              Many first-time customers visit Great Clips once
-                              but do not return. This team designed an
-                              AI-powered system that personalizes the first
-                              visit and follows up afterward to turn one-time
-                              customers into repeat clients.
-                            </p>
-                          </div>
-                          <div class="nt-explain-row">
-                            <h6>The Problem</h6>
-                            <p>
-                              First-time customers often feel unfamiliar with
-                              the service and do not build a strong connection,
-                              leading to low return rates.
-                            </p>
-                          </div>
-                          <div class="nt-explain-row">
-                            <h6>The Solution</h6>
-                            <p>
-                              The system uses a short intake and AI to
-                              personalize the visit, support the stylist, and
-                              automatically follow up with the customer after
-                              their haircut.
-                            </p>
-                          </div>
-                          <div class="nt-explain-row">
-                            <h6>Why It Works</h6>
-                            <p>
-                              It creates a better first experience, builds
-                              trust, and encourages customers to return without
-                              requiring additional marketing spend.
-                            </p>
-                          </div>
-                          <div class="nt-mini-flow">
-                            Check-in → AI → Personalized Visit → Follow-up →
-                            Return Visit
-                          </div>
-                        </section>
-                      </div>
-                    </section>
-                    <section
-                      class="ntooitive-showcase mint-showcase"
-                      id="mint-showcase"
-                      aria-label="Featured Mint Indian Bistro solution"
-                    >
-                      <span class="ntooitive-showcase__label"
-                        >Selected Challenge: Mint Indian Bistro</span
-                      >
-                      <h4 class="ntooitive-showcase__title">
-                        Featured Solution
-                      </h4>
-                      <p class="ntooitive-showcase__subtitle">
-                        AI Loyalty &amp; Smart Recommendations System
-                      </p>
-                      <div class="ntooitive-showcase__body">
-                        <section class="nt-card nt-info-card">
-                          <div class="nt-explain-row">
-                            <h6>
-                              AI Loyalty &amp; Smart Recommendations System
-                            </h6>
-                            <p>
-                              Many restaurant customers visit once but do not
-                              return regularly. This team designed an AI-powered
-                              system that personalizes menu recommendations and
-                              rewards to increase repeat visits and customer
-                              loyalty.
-                            </p>
-                          </div>
-                          <div class="nt-explain-row">
-                            <h6>The Problem</h6>
-                            <p>
-                              Customers often do not know what to order or do
-                              not feel a strong connection to the restaurant,
-                              leading to fewer repeat visits.
-                            </p>
-                          </div>
-                          <div class="nt-explain-row">
-                            <h6>The Solution</h6>
-                            <p>
-                              The system uses AI to recommend dishes based on
-                              preferences and past orders, while also offering
-                              personalized rewards to encourage customers to
-                              return.
-                            </p>
-                          </div>
-                          <div class="nt-explain-row">
-                            <h6>Why It Works</h6>
-                            <p>
-                              It creates a more personalized dining experience,
-                              increases customer satisfaction, and builds
-                              long-term loyalty without increasing marketing
-                              costs.
-                            </p>
-                          </div>
-                          <div class="nt-mini-flow">
-                            Customer Order → AI Preferences → Menu
-                            Recommendation → Reward → Return Visit
-                          </div>
-                        </section>
-                      </div>
-                    </section>
-                    <p id="detail-brief" class="detail-brief"></p>
-
-                    <section
-                      class="evolution-shell"
-                      aria-label="Thinking evolution sequence"
-                    >
-                      <div class="evolution-head">
-                        <h5 class="evolution-title">
-                          How Students Approached This Challenge
-                        </h5>
-                        <span class="evolution-phase" id="evolution-phase-label"
-                          >Initial Ideas</span
-                        >
-                      </div>
-                      <div
-                        class="evolution-stage-tabs"
-                        id="evolution-stage-tabs"
-                      ></div>
-                      <div
-                        class="evolution-ideas-grid"
-                        id="evolution-ideas-grid"
-                      ></div>
-                      <div
-                        class="evolution-insight"
-                        id="evolution-insight"
-                      ></div>
-                      <div class="evolution-controls">
-                        <button
-                          type="button"
-                          class="journey-btn journey-btn--primary"
-                          id="evolution-next"
-                        >
-                          Start journey
-                        </button>
-                        <button
-                          type="button"
-                          class="journey-btn"
-                          id="evolution-skip"
-                        >
-                          Skip to solutions
-                        </button>
-                      </div>
-                    </section>
-
-                    <section
-                      class="solutions-shell"
-                      id="solutions-shell"
-                      aria-label="Top student solutions"
-                    >
-                      <h5 class="detail-concepts-title">
-                        Top Student Solutions
-                      </h5>
-                      <p class="solutions-sub">Tap a concept to explore.</p>
-                      <div
-                        id="final-solutions"
-                        class="detail-concepts-grid"
-                      ></div>
-                    </section>
-
-                    <section
-                      class="solution-detail-shell"
-                      id="solution-detail-shell"
-                      aria-label="Expanded solution view"
-                    >
-                      <span class="solution-detail-kicker"
-                        >Expanded Solution View</span
-                      >
-                      <h5
-                        class="solution-detail-title"
-                        id="solution-detail-title"
-                      ></h5>
-                      <p
-                        class="solution-detail-summary"
-                        id="solution-detail-summary"
-                      ></p>
-                      <div class="solution-detail-blocks">
-                        <article class="solution-detail-block">
-                          <h6>Why It Works</h6>
-                          <p id="solution-detail-why"></p>
-                        </article>
-                        <article class="solution-detail-block">
-                          <h6>How AI Supports It</h6>
-                          <p id="solution-detail-ai"></p>
-                        </article>
-                      </div>
-                      <div
-                        class="solution-detail-features"
-                        id="solution-detail-features"
-                      ></div>
-                      <div class="solution-detail-actions">
-                        <button
-                          type="button"
-                          class="journey-btn journey-btn--primary"
-                          id="back-to-solutions"
-                        >
-                          Back to student projects
-                        </button>
-                      </div>
-                    </section>
-                  </article>
-                </div>
-
-                <div class="challenge-lab__bottom">
-                  <div class="challenge-progress">
-                    <span
-                      class="challenge-progress__label"
-                      id="challenge-step-label"
-                      >Intro</span
-                    >
-                    <div class="challenge-progress__track" aria-hidden="true">
-                      <div
-                        class="challenge-progress__fill"
-                        id="challenge-progress-fill"
-                      ></div>
-                    </div>
                   </div>
-                  <div class="challenge-actions">
+                </section>
+                <section
+                  class="ntooitive-showcase greatclips-showcase"
+                  id="greatclips-showcase"
+                  aria-label="Featured Great Clips solution"
+                >
+                  <span class="ntooitive-showcase__label"
+                    >Selected Challenge: Great Clips</span
+                  >
+                  <h4 class="ntooitive-showcase__title">Featured Solution</h4>
+                  <p class="ntooitive-showcase__subtitle">
+                    FirstVisit AI: Smart Customer Retention System
+                  </p>
+                  <div class="ntooitive-showcase__body">
+                    <section class="nt-card nt-info-card">
+                      <div class="nt-explain-row">
+                        <h6>FirstVisit AI: Smart Customer Retention System</h6>
+                        <p>
+                          Many first-time customers visit Great Clips once but
+                          do not return. This team designed an AI-powered system
+                          that personalizes the first visit and follows up
+                          afterward to turn one-time customers into repeat
+                          clients.
+                        </p>
+                      </div>
+                      <div class="nt-explain-row">
+                        <h6>The Problem</h6>
+                        <p>
+                          First-time customers often feel unfamiliar with the
+                          service and do not build a strong connection, leading
+                          to low return rates.
+                        </p>
+                      </div>
+                      <div class="nt-explain-row">
+                        <h6>The Solution</h6>
+                        <p>
+                          The system uses a short intake and AI to personalize
+                          the visit, support the stylist, and automatically
+                          follow up with the customer after their haircut.
+                        </p>
+                      </div>
+                      <div class="nt-explain-row">
+                        <h6>Why It Works</h6>
+                        <p>
+                          It creates a better first experience, builds trust,
+                          and encourages customers to return without requiring
+                          additional marketing spend.
+                        </p>
+                      </div>
+                      <div class="nt-mini-flow">
+                        Check-in → AI → Personalized Visit → Follow-up → Return
+                        Visit
+                      </div>
+                    </section>
+                  </div>
+                </section>
+                <section
+                  class="ntooitive-showcase mint-showcase"
+                  id="mint-showcase"
+                  aria-label="Featured Mint Indian Bistro solution"
+                >
+                  <span class="ntooitive-showcase__label"
+                    >Selected Challenge: Mint Indian Bistro</span
+                  >
+                  <h4 class="ntooitive-showcase__title">Featured Solution</h4>
+                  <p class="ntooitive-showcase__subtitle">
+                    AI Loyalty &amp; Smart Recommendations System
+                  </p>
+                  <div class="ntooitive-showcase__body">
+                    <section class="nt-card nt-info-card">
+                      <div class="nt-explain-row">
+                        <h6>AI Loyalty &amp; Smart Recommendations System</h6>
+                        <p>
+                          Many restaurant customers visit once but do not return
+                          regularly. This team designed an AI-powered system
+                          that personalizes menu recommendations and rewards to
+                          increase repeat visits and customer loyalty.
+                        </p>
+                      </div>
+                      <div class="nt-explain-row">
+                        <h6>The Problem</h6>
+                        <p>
+                          Customers often do not know what to order or do not
+                          feel a strong connection to the restaurant, leading to
+                          fewer repeat visits.
+                        </p>
+                      </div>
+                      <div class="nt-explain-row">
+                        <h6>The Solution</h6>
+                        <p>
+                          The system uses AI to recommend dishes based on
+                          preferences and past orders, while also offering
+                          personalized rewards to encourage customers to return.
+                        </p>
+                      </div>
+                      <div class="nt-explain-row">
+                        <h6>Why It Works</h6>
+                        <p>
+                          It creates a more personalized dining experience,
+                          increases customer satisfaction, and builds long-term
+                          loyalty without increasing marketing costs.
+                        </p>
+                      </div>
+                      <div class="nt-mini-flow">
+                        Customer Order → AI Preferences → Menu Recommendation →
+                        Reward → Return Visit
+                      </div>
+                    </section>
+                  </div>
+                </section>
+                <p id="detail-brief" class="detail-brief"></p>
+
+                <section
+                  class="evolution-shell"
+                  aria-label="Thinking evolution sequence"
+                >
+                  <div class="evolution-head">
+                    <h5 class="evolution-title">
+                      How Students Approached This Challenge
+                    </h5>
+                    <span class="evolution-phase" id="evolution-phase-label"
+                      >Initial Ideas</span
+                    >
+                  </div>
+                  <div
+                    class="evolution-stage-tabs"
+                    id="evolution-stage-tabs"
+                  ></div>
+                  <div
+                    class="evolution-ideas-grid"
+                    id="evolution-ideas-grid"
+                  ></div>
+                  <div class="evolution-insight" id="evolution-insight"></div>
+                  <div class="evolution-controls">
                     <button
                       type="button"
-                      class="challenge-btn challenge-btn--ghost"
-                      id="challenge-back"
-                      hidden
+                      class="journey-btn journey-btn--primary"
+                      id="evolution-next"
                     >
-                      Back
+                      Start journey
                     </button>
                     <button
                       type="button"
-                      class="challenge-btn challenge-btn--primary"
-                      id="challenge-next"
-                      hidden
+                      class="journey-btn"
+                      id="evolution-skip"
                     >
-                      Continue
+                      Skip to solutions
                     </button>
                   </div>
-                </div>
-              </section>
-              <aside class="challenge-brand-rail" aria-hidden="true">
-                <div class="challenge-brand-tile">
-                  <img src="logos/mint-wordmark.png" alt="" />
-                </div>
-                <div class="challenge-brand-tile">
-                  <img src="logos/greatclips-wordmark.png" alt="" />
-                </div>
-                <div class="challenge-brand-tile">
-                  <img src="logos/ntooitive-mark.png" alt="" />
-                </div>
-              </aside>
+                </section>
+
+                <section
+                  class="solutions-shell"
+                  id="solutions-shell"
+                  aria-label="Top student solutions"
+                >
+                  <h5 class="detail-concepts-title">Top Student Solutions</h5>
+                  <p class="solutions-sub">Tap a concept to explore.</p>
+                  <div id="final-solutions" class="detail-concepts-grid"></div>
+                </section>
+
+                <section
+                  class="solution-detail-shell"
+                  id="solution-detail-shell"
+                  aria-label="Expanded solution view"
+                >
+                  <span class="solution-detail-kicker"
+                    >Expanded Solution View</span
+                  >
+                  <h5
+                    class="solution-detail-title"
+                    id="solution-detail-title"
+                  ></h5>
+                  <p
+                    class="solution-detail-summary"
+                    id="solution-detail-summary"
+                  ></p>
+                  <div class="solution-detail-blocks">
+                    <article class="solution-detail-block">
+                      <h6>Why It Works</h6>
+                      <p id="solution-detail-why"></p>
+                    </article>
+                    <article class="solution-detail-block">
+                      <h6>How AI Supports It</h6>
+                      <p id="solution-detail-ai"></p>
+                    </article>
+                  </div>
+                  <div
+                    class="solution-detail-features"
+                    id="solution-detail-features"
+                  ></div>
+                  <div class="solution-detail-actions">
+                    <button
+                      type="button"
+                      class="journey-btn journey-btn--primary"
+                      id="back-to-solutions"
+                    >
+                      Back to student projects
+                    </button>
+                  </div>
+                </section>
+              </article>
             </div>
-          </section>
 
-          <section
-            class="slide slide--c deck-title-slide software-tools-slide"
-            id="slide-c"
-            aria-roledescription="slide"
-            aria-label="3 of 5: Project Management Software Tools and Uses"
-            aria-hidden="true"
-          >
-            <div class="margin-rail" aria-hidden="true"></div>
-            <div class="content">
-              <p class="deck-title-slide__eyebrow">DECA Project Management</p>
-              <h2 class="deck-title-slide__title">
-                Project Management Software Tools and Uses
-              </h2>
-              <div
-                class="software-tools-grid"
-                aria-label="Software tool shortcuts"
-              >
-                <a
-                  class="software-tool-btn software-tool-btn--sheets"
-                  href="https://www.google.com/sheets/about/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Google Sheets"
-                  data-tool-name="Sheets"
+            <div class="challenge-lab__bottom">
+              <div class="challenge-progress">
+                <span
+                  class="challenge-progress__label"
+                  id="challenge-step-label"
+                  >Intro</span
                 >
-                  <span class="software-tool-btn__inner">
-                    <span
-                      class="software-tool-btn__face software-tool-btn__face--front"
-                    >
-                      <span class="software-tool-btn__icon" aria-hidden="true"
-                        ><img
-                          class="software-tool-btn__logo"
-                          src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Google_Sheets_2020_Logo.svg"
-                          alt=""
-                      /></span>
-                    </span>
-                    <span
-                      class="software-tool-btn__face software-tool-btn__face--back"
-                    >
-                      <div class="software-tool-btn__back-split">
-                        <div class="software-tool-btn__back-text-col">
-                          <strong class="software-tool-btn__back-title"
-                            >Google Sheets — Data Tracking, Budget Management,
-                            and Operational Control</strong
-                          >
-                          <p class="software-tool-btn__desc">
-                            Google Sheets served as the central data
-                            infrastructure for the entire program, allowing us
-                            to track progress, manage resources, and maintain
-                            full visibility across all aspects of execution.
-                          </p>
-                          <h4 class="software-tool-btn__section-title">
-                            How We Used It
-                          </h4>
-                          <ul class="software-tool-btn__list">
-                            <li>
-                              built a master tracking system for all sessions,
-                              including pacing, completion status, and alignment
-                              with planned milestones
-                            </li>
-                            <li>
-                              developed a full budget sheet comparing projected
-                              vs. actual costs across all categories
-                            </li>
-                            <li>
-                              tracked sponsor contributions, allocation of
-                              funds, and real-time financial status
-                            </li>
-                            <li>
-                              organized student participation data, including
-                              attendance, engagement levels, and completion
-                              rates
-                            </li>
-                            <li>
-                              monitored key program metrics in a structured,
-                              continuously updated format
-                            </li>
-                          </ul>
-                          <h4 class="software-tool-btn__section-title">
-                            Project Management Impact
-                          </h4>
-                          <ul class="software-tool-btn__list">
-                            <li>
-                              ensured real-time visibility into program progress
-                              and performance
-                            </li>
-                            <li>
-                              enabled precise financial control and cost
-                              optimization decisions
-                            </li>
-                            <li>
-                              supported data-driven adjustments by identifying
-                              gaps and inefficiencies
-                            </li>
-                            <li>
-                              improved accountability by centralizing all
-                              critical project data
-                            </li>
-                            <li>
-                              allowed the team to manage both operations and
-                              finances within a single system
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="software-tool-btn__back-media-col">
-                          <div class="software-tool-btn__media-frame">
-                            <img
-                              class="software-tool-btn__shot"
-                              src="gallery/google-sheets-in-use.png"
-                              alt="Google Sheets in use screenshot"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </span>
-                  </span>
-                </a>
-                <a
-                  class="software-tool-btn software-tool-btn--notion"
-                  href="https://www.notion.so/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Notion"
-                  data-tool-name="Notion"
+                <div class="challenge-progress__track" aria-hidden="true">
+                  <div
+                    class="challenge-progress__fill"
+                    id="challenge-progress-fill"
+                  ></div>
+                </div>
+              </div>
+              <div class="challenge-actions">
+                <button
+                  type="button"
+                  class="challenge-btn challenge-btn--ghost"
+                  id="challenge-back"
+                  hidden
                 >
-                  <span class="software-tool-btn__inner">
-                    <span
-                      class="software-tool-btn__face software-tool-btn__face--front"
-                    >
-                      <span class="software-tool-btn__icon" aria-hidden="true"
-                        ><img
-                          class="software-tool-btn__logo"
-                          src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png"
-                          alt=""
-                      /></span>
-                    </span>
-                    <span
-                      class="software-tool-btn__face software-tool-btn__face--back"
-                    >
-                      <div class="software-tool-btn__back-split">
-                        <div class="software-tool-btn__back-text-col">
-                          <strong class="software-tool-btn__back-title"
-                            >Notion — Central Project Hub and Organizational
-                            System</strong
-                          >
-                          <p class="software-tool-btn__desc">
-                            Notion functioned as the primary command center for
-                            organizing the entire project, integrating planning,
-                            documentation, and execution into one unified
-                            system.
-                          </p>
-                          <h4 class="software-tool-btn__section-title">
-                            How We Used It
-                          </h4>
-                          <ul class="software-tool-btn__list">
-                            <li>
-                              created structured pages for each workshop,
-                              including objectives, materials, and execution
-                              plans
-                            </li>
-                            <li>
-                              built task boards to assign responsibilities
-                              across team members using a RASCI-style structure
-                            </li>
-                            <li>
-                              mapped out the full project timeline, including
-                              milestones, deliverables, and deadlines
-                            </li>
-                            <li>
-                              stored all program documentation, including
-                              curriculum, planning notes, and strategy outlines
-                            </li>
-                            <li>
-                              tracked progress across different phases of the
-                              program in a centralized workspace
-                            </li>
-                          </ul>
-                          <h4 class="software-tool-btn__section-title">
-                            Project Management Impact
-                          </h4>
-                          <ul class="software-tool-btn__list">
-                            <li>
-                              ensured full organizational clarity across all
-                              aspects of the project
-                            </li>
-                            <li>
-                              reduced miscommunication by centralizing
-                              information and responsibilities
-                            </li>
-                            <li>
-                              enabled consistent execution by aligning all team
-                              members to the same system
-                            </li>
-                            <li>
-                              improved efficiency by eliminating scattered tools
-                              and fragmented planning
-                            </li>
-                            <li>
-                              supported structured, professional-level project
-                              coordination
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="software-tool-btn__back-media-col">
-                          <div class="software-tool-btn__media-frame">
-                            <img
-                              class="software-tool-btn__shot"
-                              src="gallery/notion-in-use.png"
-                              alt="Notion in use screenshot"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </span>
-                  </span>
-                </a>
-                <a
-                  class="software-tool-btn software-tool-btn--calendar"
-                  href="https://calendar.google.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Google Calendar"
-                  data-tool-name="Calendar"
+                  Back
+                </button>
+                <button
+                  type="button"
+                  class="challenge-btn challenge-btn--primary"
+                  id="challenge-next"
+                  hidden
                 >
-                  <span class="software-tool-btn__inner">
-                    <span
-                      class="software-tool-btn__face software-tool-btn__face--front"
-                    >
-                      <span class="software-tool-btn__icon" aria-hidden="true"
-                        ><img
-                          class="software-tool-btn__logo"
-                          src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg"
-                          alt=""
-                      /></span>
-                    </span>
-                    <span
-                      class="software-tool-btn__face software-tool-btn__face--back"
-                    >
-                      <div class="software-tool-btn__back-split">
-                        <div class="software-tool-btn__back-text-col">
-                          <strong class="software-tool-btn__back-title"
-                            >Google Calendar — Scheduling, Time Management, and
-                            Execution Alignment</strong
-                          >
-                          <p class="software-tool-btn__desc">
-                            Google Calendar was used to coordinate all
-                            time-based elements of the project, ensuring that
-                            sessions, meetings, and deadlines were aligned and
-                            executed consistently.
-                          </p>
-                          <h4 class="software-tool-btn__section-title">
-                            How We Used It
-                          </h4>
-                          <ul class="software-tool-btn__list">
-                            <li>
-                              scheduled all workshops, planning meetings, and
-                              key milestones throughout the program
-                            </li>
-                            <li>
-                              aligned team member availability to ensure smooth
-                              coordination and execution
-                            </li>
-                            <li>
-                              set deadlines for deliverables, preparation tasks,
-                              and project checkpoints
-                            </li>
-                            <li>
-                              integrated session timing with the overall program
-                              timeline
-                            </li>
-                            <li>
-                              maintained a structured timeline for both internal
-                              operations and external execution
-                            </li>
-                          </ul>
-                          <h4 class="software-tool-btn__section-title">
-                            Project Management Impact
-                          </h4>
-                          <ul class="software-tool-btn__list">
-                            <li>
-                              ensured consistent pacing of the program from
-                              start to finish
-                            </li>
-                            <li>
-                              prevented scheduling conflicts and last-minute
-                              disruptions
-                            </li>
-                            <li>
-                              improved reliability and professionalism in
-                              execution
-                            </li>
-                            <li>
-                              enabled the team to stay on track with all
-                              deliverables
-                            </li>
-                            <li>
-                              supported time-based coordination across multiple
-                              responsibilities
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="software-tool-btn__back-media-col">
-                          <div class="software-tool-btn__media-frame">
-                            <img
-                              class="software-tool-btn__shot"
-                              src="gallery/google-calendar-in-use.png"
-                              alt="Google Calendar in use screenshot"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </span>
-                  </span>
-                </a>
-                <a
-                  class="software-tool-btn software-tool-btn--forms"
-                  href="https://docs.google.com/forms/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Google Forms"
-                  data-tool-name="Forms"
-                >
-                  <span class="software-tool-btn__inner">
-                    <span
-                      class="software-tool-btn__face software-tool-btn__face--front"
-                    >
-                      <span class="software-tool-btn__icon" aria-hidden="true"
-                        ><img
-                          class="software-tool-btn__logo"
-                          src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Google_Forms_2020_Logo.svg"
-                          alt=""
-                      /></span>
-                    </span>
-                    <span
-                      class="software-tool-btn__face software-tool-btn__face--back"
-                    >
-                      <div class="software-tool-btn__back-split">
-                        <div class="software-tool-btn__back-text-col">
-                          <strong class="software-tool-btn__back-title"
-                            >Google Forms — Feedback Collection and Performance
-                            Monitoring System</strong
-                          >
-                          <p class="software-tool-btn__desc">
-                            Google Forms served as the primary tool for
-                            collecting real-time feedback and measuring program
-                            performance, enabling continuous improvement
-                            throughout execution.
-                          </p>
-                          <h4 class="software-tool-btn__section-title">
-                            How We Used It
-                          </h4>
-                          <ul class="software-tool-btn__list">
-                            <li>
-                              distributed surveys after each session to collect
-                              student feedback on engagement and understanding
-                            </li>
-                            <li>
-                              gathered mentor feedback to assess the
-                              effectiveness of workshop delivery
-                            </li>
-                            <li>
-                              tracked participation trends and identified
-                              patterns in student responses
-                            </li>
-                            <li>
-                              collected qualitative insights to understand
-                              student experiences and challenges
-                            </li>
-                            <li>
-                              used structured questions to measure progress
-                              toward key performance indicators
-                            </li>
-                          </ul>
-                          <h4 class="software-tool-btn__section-title">
-                            Project Management Impact
-                          </h4>
-                          <ul class="software-tool-btn__list">
-                            <li>
-                              enabled data-driven decision making rather than
-                              relying on assumptions
-                            </li>
-                            <li>
-                              allowed early identification of issues such as low
-                              engagement or confusion
-                            </li>
-                            <li>
-                              supported real-time adaptation of sessions based
-                              on feedback
-                            </li>
-                            <li>
-                              improved overall program quality through
-                              continuous refinement
-                            </li>
-                            <li>
-                              provided measurable evidence for evaluating
-                              project success
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="software-tool-btn__back-media-col">
-                          <div class="software-tool-btn__media-frame">
-                            <img
-                              class="software-tool-btn__shot"
-                              src="gallery/google-forms-in-use.png"
-                              alt="Google Forms in use screenshot"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </span>
-                  </span>
-                </a>
-                <a
-                  class="software-tool-btn software-tool-btn--slack"
-                  href="https://slack.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Slack"
-                  data-tool-name="Slack"
-                >
-                  <span class="software-tool-btn__inner">
-                    <span
-                      class="software-tool-btn__face software-tool-btn__face--front"
-                    >
-                      <span class="software-tool-btn__icon" aria-hidden="true"
-                        ><img
-                          class="software-tool-btn__logo"
-                          src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Slack_icon_2019.svg"
-                          alt=""
-                      /></span>
-                    </span>
-                    <span
-                      class="software-tool-btn__face software-tool-btn__face--back"
-                    >
-                      <div class="software-tool-btn__back-split">
-                        <div class="software-tool-btn__back-text-col">
-                          <strong class="software-tool-btn__back-title"
-                            >Slack — Communication, Coordination, and Real-Time
-                            Collaboration</strong
-                          >
-                          <p class="software-tool-btn__desc">
-                            Slack was used as the primary communication platform
-                            to ensure fast, organized, and efficient
-                            coordination between all team members.
-                          </p>
-                          <h4 class="software-tool-btn__section-title">
-                            How We Used It
-                          </h4>
-                          <ul class="software-tool-btn__list">
-                            <li>
-                              created dedicated channels for different aspects
-                              of the project (planning, execution, logistics)
-                            </li>
-                            <li>
-                              shared real-time updates during sessions and
-                              preparation phases
-                            </li>
-                            <li>
-                              coordinated responsibilities and clarified tasks
-                              across team members
-                            </li>
-                            <li>
-                              communicated quickly to resolve issues during live
-                              execution
-                            </li>
-                            <li>
-                              maintained consistent communication flow without
-                              delays
-                            </li>
-                          </ul>
-                          <h4 class="software-tool-btn__section-title">
-                            Project Management Impact
-                          </h4>
-                          <ul class="software-tool-btn__list">
-                            <li>
-                              improved team responsiveness and decision-making
-                              speed
-                            </li>
-                            <li>
-                              reduced miscommunication and information gaps
-                            </li>
-                            <li>
-                              ensured alignment across all members during
-                              critical phases
-                            </li>
-                            <li>
-                              supported real-time coordination during live
-                              program execution
-                            </li>
-                            <li>
-                              enhanced overall efficiency in team collaboration
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="software-tool-btn__back-media-col">
-                          <div class="software-tool-btn__media-frame">
-                            <img
-                              class="software-tool-btn__shot"
-                              src="gallery/slack-in-use.png"
-                              alt="Slack in use screenshot"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </span>
-                  </span>
-                </a>
-                <a
-                  class="software-tool-btn software-tool-btn--claude"
-                  href="https://claude.ai/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Claude"
-                  data-tool-name="Claude"
-                >
-                  <span class="software-tool-btn__inner">
-                    <span
-                      class="software-tool-btn__face software-tool-btn__face--front"
-                    >
-                      <span class="software-tool-btn__icon" aria-hidden="true"
-                        ><img
-                          class="software-tool-btn__logo"
-                          src="logos/claude-logo.png?v=3"
-                          alt=""
-                      /></span>
-                    </span>
-                    <span
-                      class="software-tool-btn__face software-tool-btn__face--back"
-                    >
-                      <div class="software-tool-btn__back-split">
-                        <div class="software-tool-btn__back-text-col">
-                          <strong class="software-tool-btn__back-title"
-                            >Claude — AI-Assisted Planning, Structuring, and
-                            Content Development</strong
-                          >
-                          <p class="software-tool-btn__desc">
-                            Claude was used as an AI support tool to enhance
-                            planning, structure ideas, and refine content across
-                            multiple aspects of the project.
-                          </p>
-                          <h4 class="software-tool-btn__section-title">
-                            How We Used It
-                          </h4>
-                          <ul class="software-tool-btn__list">
-                            <li>
-                              generated structured outlines for workshops and
-                              session content
-                            </li>
-                            <li>
-                              refined explanations to make material more clear
-                              and accessible to students
-                            </li>
-                            <li>
-                              supported development of project plans,
-                              frameworks, and presentation materials
-                            </li>
-                            <li>
-                              assisted in organizing complex ideas into
-                              simplified, actionable formats
-                            </li>
-                            <li>
-                              enhanced the clarity and effectiveness of
-                              communication across the program
-                            </li>
-                          </ul>
-                          <h4 class="software-tool-btn__section-title">
-                            Project Management Impact
-                          </h4>
-                          <ul class="software-tool-btn__list">
-                            <li>
-                              significantly accelerated planning and content
-                              development processes
-                            </li>
-                            <li>
-                              improved the quality and structure of materials
-                              delivered to students
-                            </li>
-                            <li>
-                              enabled more efficient problem solving and idea
-                              generation
-                            </li>
-                            <li>
-                              supported higher-level thinking and refinement
-                              across the project
-                            </li>
-                            <li>
-                              integrated AI into real-world project execution
-                              rather than passive use
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="software-tool-btn__back-media-col">
-                          <div class="software-tool-btn__media-frame">
-                            <img
-                              class="software-tool-btn__shot"
-                              src="gallery/claude-in-use.png"
-                              alt="Claude in use screenshot"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </span>
-                  </span>
-                </a>
-                <a
-                  class="software-tool-btn software-tool-btn--clickup"
-                  href="https://clickup.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open ClickUp"
-                  data-tool-name="ClickUp"
-                >
-                  <span class="software-tool-btn__inner">
-                    <span
-                      class="software-tool-btn__face software-tool-btn__face--front"
-                    >
-                      <span class="software-tool-btn__icon" aria-hidden="true"
-                        ><img
-                          class="software-tool-btn__logo"
-                          src="logos/clickup-logo.png?v=3"
-                          alt=""
-                      /></span>
-                    </span>
-                    <span
-                      class="software-tool-btn__face software-tool-btn__face--back"
-                    >
-                      <div class="software-tool-btn__back-split">
-                        <div class="software-tool-btn__back-text-col">
-                          <strong class="software-tool-btn__back-title"
-                            >ClickUp — Task Management, Workflow Tracking, and
-                            Accountability System</strong
-                          >
-                          <p class="software-tool-btn__desc">
-                            ClickUp was used to manage tasks, assign
-                            responsibilities, and track workflow execution
-                            across the project lifecycle.
-                          </p>
-                          <h4 class="software-tool-btn__section-title">
-                            How We Used It
-                          </h4>
-                          <ul class="software-tool-btn__list">
-                            <li>
-                              created task lists for each phase of the project
-                            </li>
-                            <li>
-                              assigned responsibilities to team members with
-                              clear ownership
-                            </li>
-                            <li>
-                              tracked completion status of deliverables and
-                              milestones
-                            </li>
-                            <li>organized workflows into structured stages</li>
-                            <li>monitored progress across all active tasks</li>
-                          </ul>
-                          <h4 class="software-tool-btn__section-title">
-                            Project Management Impact
-                          </h4>
-                          <ul class="software-tool-btn__list">
-                            <li>ensured accountability for all team members</li>
-                            <li>
-                              improved visibility into task progress and
-                              completion
-                            </li>
-                            <li>
-                              prevented delays by tracking responsibilities in
-                              real time
-                            </li>
-                            <li>supported structured workflow management</li>
-                            <li>
-                              enhanced consistency in execution across all
-                              phases
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="software-tool-btn__back-media-col">
-                          <div class="software-tool-btn__media-frame">
-                            <img
-                              class="software-tool-btn__shot"
-                              src="gallery/clickup-in-use.png"
-                              alt="ClickUp in use screenshot"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </span>
-                  </span>
-                </a>
-                <a
-                  class="software-tool-btn software-tool-btn--manus"
-                  href="https://manus.ai/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open Manus AI"
-                  data-tool-name="Manus AI"
-                >
-                  <span class="software-tool-btn__inner">
-                    <span
-                      class="software-tool-btn__face software-tool-btn__face--front"
-                    >
-                      <span class="software-tool-btn__icon" aria-hidden="true"
-                        ><img
-                          class="software-tool-btn__logo"
-                          src="logos/manus-logo.png?v=3"
-                          alt=""
-                      /></span>
-                    </span>
-                    <span
-                      class="software-tool-btn__face software-tool-btn__face--back"
-                    >
-                      <div class="software-tool-btn__back-split">
-                        <div class="software-tool-btn__back-text-col">
-                          <strong class="software-tool-btn__back-title"
-                            >Manus AI — AI Workflow Integration and Execution
-                            Support</strong
-                          >
-                          <p class="software-tool-btn__desc">
-                            Manus AI was used to support AI-driven workflows,
-                            enhancing efficiency and enabling structured
-                            execution across the project.
-                          </p>
-                          <h4 class="software-tool-btn__section-title">
-                            How We Used It
-                          </h4>
-                          <ul class="software-tool-btn__list">
-                            <li>
-                              assisted in automating parts of the workflow where
-                              applicable
-                            </li>
-                            <li>
-                              supported execution efficiency by reducing manual
-                              processes
-                            </li>
-                            <li>
-                              enhanced integration of AI into project systems
-                              and operations
-                            </li>
-                            <li>
-                              contributed to structuring workflows in a more
-                              streamlined manner
-                            </li>
-                            <li>
-                              supported task completion through AI-assisted
-                              processes
-                            </li>
-                          </ul>
-                          <h4 class="software-tool-btn__section-title">
-                            Project Management Impact
-                          </h4>
-                          <ul class="software-tool-btn__list">
-                            <li>
-                              improved overall efficiency across project
-                              operations
-                            </li>
-                            <li>
-                              reduced manual workload and repetitive tasks
-                            </li>
-                            <li>
-                              strengthened integration of AI into real-world
-                              execution
-                            </li>
-                            <li>supported smoother workflow coordination</li>
-                            <li>
-                              enhanced the scalability of the project system
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="software-tool-btn__back-media-col">
-                          <div class="software-tool-btn__media-frame">
-                            <img
-                              class="software-tool-btn__shot"
-                              src="gallery/manus-in-use.png"
-                              alt="Manus AI in use screenshot"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </span>
-                  </span>
-                </a>
+                  Continue
+                </button>
               </div>
             </div>
           </section>
+          <aside class="challenge-brand-rail" aria-hidden="true">
+            <div class="challenge-brand-tile">
+              <img src="logos/mint-wordmark.png" alt="" />
+            </div>
+            <div class="challenge-brand-tile">
+              <img src="logos/greatclips-wordmark.png" alt="" />
+            </div>
+            <div class="challenge-brand-tile">
+              <img src="logos/ntooitive-mark.png" alt="" />
+            </div>
+          </aside>
+        </div>
+      </section>
 
-          <section
-            class="slide slide--d deck-title-slide"
-            id="slide-d"
-            aria-roledescription="slide"
-            aria-label="4 of 5: Evaluating Project Results — Beyond the Numbers"
-            aria-hidden="true"
-          >
-            <div class="margin-rail" aria-hidden="true"></div>
-            <div class="content">
-              <p class="deck-title-slide__eyebrow">Outcomes &amp; impact</p>
-              <h2 class="deck-title-slide__title">
-                Evaluating Project Results - Beyond the Numbers
-              </h2>
-              <p class="evaluation-email-hint">Tap any screenshot to expand</p>
-              <section
-                class="evaluation-email-collage"
-                aria-label="Email evidence screenshots"
-              >
-                <figure class="evaluation-email-card evaluation-email-card--a">
-                  <img
-                    src="gallery/email-screenshot-1.png"
-                    alt="Email screenshot 1"
-                  />
-                  <figcaption class="evaluation-email-label">
-                    Email Screenshot 1
-                  </figcaption>
-                </figure>
-                <figure class="evaluation-email-card evaluation-email-card--b">
-                  <img
-                    src="gallery/email-screenshot-2.png"
-                    alt="Email screenshot 2"
-                  />
-                  <figcaption class="evaluation-email-label">
-                    Email Screenshot 2
-                  </figcaption>
-                </figure>
-                <figure class="evaluation-email-card evaluation-email-card--c">
-                  <img
-                    src="gallery/email-screenshot-3.png"
-                    alt="Email screenshot 3"
-                  />
-                  <figcaption class="evaluation-email-label">
-                    Email Screenshot 3
-                  </figcaption>
-                </figure>
-              </section>
-            </div>
-          </section>
+      <section
+        class="slide slide--c deck-title-slide software-tools-slide"
+        id="slide-c"
+        aria-roledescription="slide"
+        aria-label="3 of 5: Project Management Software Tools and Uses"
+        aria-hidden="true"
+      >
+        <div class="margin-rail" aria-hidden="true"></div>
+        <div class="content">
+          <p class="deck-title-slide__eyebrow">DECA Project Management</p>
+          <h2 class="deck-title-slide__title">
+            Project Management Software Tools and Uses
+          </h2>
+          <div class="software-tools-grid" aria-label="Software tool shortcuts">
+            <a
+              class="software-tool-btn software-tool-btn--sheets"
+              href="https://www.google.com/sheets/about/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Google Sheets"
+              data-tool-name="Sheets"
+            >
+              <span class="software-tool-btn__inner">
+                <span
+                  class="software-tool-btn__face software-tool-btn__face--front"
+                >
+                  <span class="software-tool-btn__icon" aria-hidden="true"
+                    ><img
+                      class="software-tool-btn__logo"
+                      src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Google_Sheets_2020_Logo.svg"
+                      alt=""
+                  /></span>
+                </span>
+                <span
+                  class="software-tool-btn__face software-tool-btn__face--back"
+                >
+                  <div class="software-tool-btn__back-split">
+                    <div class="software-tool-btn__back-text-col">
+                      <strong class="software-tool-btn__back-title"
+                        >Google Sheets — Data Tracking, Budget Management, and
+                        Operational Control</strong
+                      >
+                      <p class="software-tool-btn__desc">
+                        Google Sheets served as the central data infrastructure
+                        for the entire program, allowing us to track progress,
+                        manage resources, and maintain full visibility across
+                        all aspects of execution.
+                      </p>
+                      <h4 class="software-tool-btn__section-title">
+                        How We Used It
+                      </h4>
+                      <ul class="software-tool-btn__list">
+                        <li>
+                          built a master tracking system for all sessions,
+                          including pacing, completion status, and alignment
+                          with planned milestones
+                        </li>
+                        <li>
+                          developed a full budget sheet comparing projected vs.
+                          actual costs across all categories
+                        </li>
+                        <li>
+                          tracked sponsor contributions, allocation of funds,
+                          and real-time financial status
+                        </li>
+                        <li>
+                          organized student participation data, including
+                          attendance, engagement levels, and completion rates
+                        </li>
+                        <li>
+                          monitored key program metrics in a structured,
+                          continuously updated format
+                        </li>
+                      </ul>
+                      <h4 class="software-tool-btn__section-title">
+                        Project Management Impact
+                      </h4>
+                      <ul class="software-tool-btn__list">
+                        <li>
+                          ensured real-time visibility into program progress and
+                          performance
+                        </li>
+                        <li>
+                          enabled precise financial control and cost
+                          optimization decisions
+                        </li>
+                        <li>
+                          supported data-driven adjustments by identifying gaps
+                          and inefficiencies
+                        </li>
+                        <li>
+                          improved accountability by centralizing all critical
+                          project data
+                        </li>
+                        <li>
+                          allowed the team to manage both operations and
+                          finances within a single system
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="software-tool-btn__back-media-col">
+                      <div class="software-tool-btn__media-frame">
+                        <img
+                          class="software-tool-btn__shot"
+                          src="gallery/google-sheets-in-use.png"
+                          alt="Google Sheets in use screenshot"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </a>
+            <a
+              class="software-tool-btn software-tool-btn--notion"
+              href="https://www.notion.so/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Notion"
+              data-tool-name="Notion"
+            >
+              <span class="software-tool-btn__inner">
+                <span
+                  class="software-tool-btn__face software-tool-btn__face--front"
+                >
+                  <span class="software-tool-btn__icon" aria-hidden="true"
+                    ><img
+                      class="software-tool-btn__logo"
+                      src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png"
+                      alt=""
+                  /></span>
+                </span>
+                <span
+                  class="software-tool-btn__face software-tool-btn__face--back"
+                >
+                  <div class="software-tool-btn__back-split">
+                    <div class="software-tool-btn__back-text-col">
+                      <strong class="software-tool-btn__back-title"
+                        >Notion — Central Project Hub and Organizational
+                        System</strong
+                      >
+                      <p class="software-tool-btn__desc">
+                        Notion functioned as the primary command center for
+                        organizing the entire project, integrating planning,
+                        documentation, and execution into one unified system.
+                      </p>
+                      <h4 class="software-tool-btn__section-title">
+                        How We Used It
+                      </h4>
+                      <ul class="software-tool-btn__list">
+                        <li>
+                          created structured pages for each workshop, including
+                          objectives, materials, and execution plans
+                        </li>
+                        <li>
+                          built task boards to assign responsibilities across
+                          team members using a RASCI-style structure
+                        </li>
+                        <li>
+                          mapped out the full project timeline, including
+                          milestones, deliverables, and deadlines
+                        </li>
+                        <li>
+                          stored all program documentation, including
+                          curriculum, planning notes, and strategy outlines
+                        </li>
+                        <li>
+                          tracked progress across different phases of the
+                          program in a centralized workspace
+                        </li>
+                      </ul>
+                      <h4 class="software-tool-btn__section-title">
+                        Project Management Impact
+                      </h4>
+                      <ul class="software-tool-btn__list">
+                        <li>
+                          ensured full organizational clarity across all aspects
+                          of the project
+                        </li>
+                        <li>
+                          reduced miscommunication by centralizing information
+                          and responsibilities
+                        </li>
+                        <li>
+                          enabled consistent execution by aligning all team
+                          members to the same system
+                        </li>
+                        <li>
+                          improved efficiency by eliminating scattered tools and
+                          fragmented planning
+                        </li>
+                        <li>
+                          supported structured, professional-level project
+                          coordination
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="software-tool-btn__back-media-col">
+                      <div class="software-tool-btn__media-frame">
+                        <img
+                          class="software-tool-btn__shot"
+                          src="gallery/notion-in-use.png"
+                          alt="Notion in use screenshot"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </a>
+            <a
+              class="software-tool-btn software-tool-btn--calendar"
+              href="https://calendar.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Google Calendar"
+              data-tool-name="Calendar"
+            >
+              <span class="software-tool-btn__inner">
+                <span
+                  class="software-tool-btn__face software-tool-btn__face--front"
+                >
+                  <span class="software-tool-btn__icon" aria-hidden="true"
+                    ><img
+                      class="software-tool-btn__logo"
+                      src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg"
+                      alt=""
+                  /></span>
+                </span>
+                <span
+                  class="software-tool-btn__face software-tool-btn__face--back"
+                >
+                  <div class="software-tool-btn__back-split">
+                    <div class="software-tool-btn__back-text-col">
+                      <strong class="software-tool-btn__back-title"
+                        >Google Calendar — Scheduling, Time Management, and
+                        Execution Alignment</strong
+                      >
+                      <p class="software-tool-btn__desc">
+                        Google Calendar was used to coordinate all time-based
+                        elements of the project, ensuring that sessions,
+                        meetings, and deadlines were aligned and executed
+                        consistently.
+                      </p>
+                      <h4 class="software-tool-btn__section-title">
+                        How We Used It
+                      </h4>
+                      <ul class="software-tool-btn__list">
+                        <li>
+                          scheduled all workshops, planning meetings, and key
+                          milestones throughout the program
+                        </li>
+                        <li>
+                          aligned team member availability to ensure smooth
+                          coordination and execution
+                        </li>
+                        <li>
+                          set deadlines for deliverables, preparation tasks, and
+                          project checkpoints
+                        </li>
+                        <li>
+                          integrated session timing with the overall program
+                          timeline
+                        </li>
+                        <li>
+                          maintained a structured timeline for both internal
+                          operations and external execution
+                        </li>
+                      </ul>
+                      <h4 class="software-tool-btn__section-title">
+                        Project Management Impact
+                      </h4>
+                      <ul class="software-tool-btn__list">
+                        <li>
+                          ensured consistent pacing of the program from start to
+                          finish
+                        </li>
+                        <li>
+                          prevented scheduling conflicts and last-minute
+                          disruptions
+                        </li>
+                        <li>
+                          improved reliability and professionalism in execution
+                        </li>
+                        <li>
+                          enabled the team to stay on track with all
+                          deliverables
+                        </li>
+                        <li>
+                          supported time-based coordination across multiple
+                          responsibilities
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="software-tool-btn__back-media-col">
+                      <div class="software-tool-btn__media-frame">
+                        <img
+                          class="software-tool-btn__shot"
+                          src="gallery/google-calendar-in-use.png"
+                          alt="Google Calendar in use screenshot"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </a>
+            <a
+              class="software-tool-btn software-tool-btn--forms"
+              href="https://docs.google.com/forms/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Google Forms"
+              data-tool-name="Forms"
+            >
+              <span class="software-tool-btn__inner">
+                <span
+                  class="software-tool-btn__face software-tool-btn__face--front"
+                >
+                  <span class="software-tool-btn__icon" aria-hidden="true"
+                    ><img
+                      class="software-tool-btn__logo"
+                      src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Google_Forms_2020_Logo.svg"
+                      alt=""
+                  /></span>
+                </span>
+                <span
+                  class="software-tool-btn__face software-tool-btn__face--back"
+                >
+                  <div class="software-tool-btn__back-split">
+                    <div class="software-tool-btn__back-text-col">
+                      <strong class="software-tool-btn__back-title"
+                        >Google Forms — Feedback Collection and Performance
+                        Monitoring System</strong
+                      >
+                      <p class="software-tool-btn__desc">
+                        Google Forms served as the primary tool for collecting
+                        real-time feedback and measuring program performance,
+                        enabling continuous improvement throughout execution.
+                      </p>
+                      <h4 class="software-tool-btn__section-title">
+                        How We Used It
+                      </h4>
+                      <ul class="software-tool-btn__list">
+                        <li>
+                          distributed surveys after each session to collect
+                          student feedback on engagement and understanding
+                        </li>
+                        <li>
+                          gathered mentor feedback to assess the effectiveness
+                          of workshop delivery
+                        </li>
+                        <li>
+                          tracked participation trends and identified patterns
+                          in student responses
+                        </li>
+                        <li>
+                          collected qualitative insights to understand student
+                          experiences and challenges
+                        </li>
+                        <li>
+                          used structured questions to measure progress toward
+                          key performance indicators
+                        </li>
+                      </ul>
+                      <h4 class="software-tool-btn__section-title">
+                        Project Management Impact
+                      </h4>
+                      <ul class="software-tool-btn__list">
+                        <li>
+                          enabled data-driven decision making rather than
+                          relying on assumptions
+                        </li>
+                        <li>
+                          allowed early identification of issues such as low
+                          engagement or confusion
+                        </li>
+                        <li>
+                          supported real-time adaptation of sessions based on
+                          feedback
+                        </li>
+                        <li>
+                          improved overall program quality through continuous
+                          refinement
+                        </li>
+                        <li>
+                          provided measurable evidence for evaluating project
+                          success
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="software-tool-btn__back-media-col">
+                      <div class="software-tool-btn__media-frame">
+                        <img
+                          class="software-tool-btn__shot"
+                          src="gallery/google-forms-in-use.png"
+                          alt="Google Forms in use screenshot"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </a>
+            <a
+              class="software-tool-btn software-tool-btn--slack"
+              href="https://slack.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Slack"
+              data-tool-name="Slack"
+            >
+              <span class="software-tool-btn__inner">
+                <span
+                  class="software-tool-btn__face software-tool-btn__face--front"
+                >
+                  <span class="software-tool-btn__icon" aria-hidden="true"
+                    ><img
+                      class="software-tool-btn__logo"
+                      src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Slack_icon_2019.svg"
+                      alt=""
+                  /></span>
+                </span>
+                <span
+                  class="software-tool-btn__face software-tool-btn__face--back"
+                >
+                  <div class="software-tool-btn__back-split">
+                    <div class="software-tool-btn__back-text-col">
+                      <strong class="software-tool-btn__back-title"
+                        >Slack — Communication, Coordination, and Real-Time
+                        Collaboration</strong
+                      >
+                      <p class="software-tool-btn__desc">
+                        Slack was used as the primary communication platform to
+                        ensure fast, organized, and efficient coordination
+                        between all team members.
+                      </p>
+                      <h4 class="software-tool-btn__section-title">
+                        How We Used It
+                      </h4>
+                      <ul class="software-tool-btn__list">
+                        <li>
+                          created dedicated channels for different aspects of
+                          the project (planning, execution, logistics)
+                        </li>
+                        <li>
+                          shared real-time updates during sessions and
+                          preparation phases
+                        </li>
+                        <li>
+                          coordinated responsibilities and clarified tasks
+                          across team members
+                        </li>
+                        <li>
+                          communicated quickly to resolve issues during live
+                          execution
+                        </li>
+                        <li>
+                          maintained consistent communication flow without
+                          delays
+                        </li>
+                      </ul>
+                      <h4 class="software-tool-btn__section-title">
+                        Project Management Impact
+                      </h4>
+                      <ul class="software-tool-btn__list">
+                        <li>
+                          improved team responsiveness and decision-making speed
+                        </li>
+                        <li>reduced miscommunication and information gaps</li>
+                        <li>
+                          ensured alignment across all members during critical
+                          phases
+                        </li>
+                        <li>
+                          supported real-time coordination during live program
+                          execution
+                        </li>
+                        <li>
+                          enhanced overall efficiency in team collaboration
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="software-tool-btn__back-media-col">
+                      <div class="software-tool-btn__media-frame">
+                        <img
+                          class="software-tool-btn__shot"
+                          src="gallery/slack-in-use.png"
+                          alt="Slack in use screenshot"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </a>
+            <a
+              class="software-tool-btn software-tool-btn--claude"
+              href="https://claude.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Claude"
+              data-tool-name="Claude"
+            >
+              <span class="software-tool-btn__inner">
+                <span
+                  class="software-tool-btn__face software-tool-btn__face--front"
+                >
+                  <span class="software-tool-btn__icon" aria-hidden="true"
+                    ><img
+                      class="software-tool-btn__logo"
+                      src="logos/claude-logo.png?v=3"
+                      alt=""
+                  /></span>
+                </span>
+                <span
+                  class="software-tool-btn__face software-tool-btn__face--back"
+                >
+                  <div class="software-tool-btn__back-split">
+                    <div class="software-tool-btn__back-text-col">
+                      <strong class="software-tool-btn__back-title"
+                        >Claude — AI-Assisted Planning, Structuring, and Content
+                        Development</strong
+                      >
+                      <p class="software-tool-btn__desc">
+                        Claude was used as an AI support tool to enhance
+                        planning, structure ideas, and refine content across
+                        multiple aspects of the project.
+                      </p>
+                      <h4 class="software-tool-btn__section-title">
+                        How We Used It
+                      </h4>
+                      <ul class="software-tool-btn__list">
+                        <li>
+                          generated structured outlines for workshops and
+                          session content
+                        </li>
+                        <li>
+                          refined explanations to make material more clear and
+                          accessible to students
+                        </li>
+                        <li>
+                          supported development of project plans, frameworks,
+                          and presentation materials
+                        </li>
+                        <li>
+                          assisted in organizing complex ideas into simplified,
+                          actionable formats
+                        </li>
+                        <li>
+                          enhanced the clarity and effectiveness of
+                          communication across the program
+                        </li>
+                      </ul>
+                      <h4 class="software-tool-btn__section-title">
+                        Project Management Impact
+                      </h4>
+                      <ul class="software-tool-btn__list">
+                        <li>
+                          significantly accelerated planning and content
+                          development processes
+                        </li>
+                        <li>
+                          improved the quality and structure of materials
+                          delivered to students
+                        </li>
+                        <li>
+                          enabled more efficient problem solving and idea
+                          generation
+                        </li>
+                        <li>
+                          supported higher-level thinking and refinement across
+                          the project
+                        </li>
+                        <li>
+                          integrated AI into real-world project execution rather
+                          than passive use
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="software-tool-btn__back-media-col">
+                      <div class="software-tool-btn__media-frame">
+                        <img
+                          class="software-tool-btn__shot"
+                          src="gallery/claude-in-use.png"
+                          alt="Claude in use screenshot"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </a>
+            <a
+              class="software-tool-btn software-tool-btn--clickup"
+              href="https://clickup.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open ClickUp"
+              data-tool-name="ClickUp"
+            >
+              <span class="software-tool-btn__inner">
+                <span
+                  class="software-tool-btn__face software-tool-btn__face--front"
+                >
+                  <span class="software-tool-btn__icon" aria-hidden="true"
+                    ><img
+                      class="software-tool-btn__logo"
+                      src="logos/clickup-logo.png?v=3"
+                      alt=""
+                  /></span>
+                </span>
+                <span
+                  class="software-tool-btn__face software-tool-btn__face--back"
+                >
+                  <div class="software-tool-btn__back-split">
+                    <div class="software-tool-btn__back-text-col">
+                      <strong class="software-tool-btn__back-title"
+                        >ClickUp — Task Management, Workflow Tracking, and
+                        Accountability System</strong
+                      >
+                      <p class="software-tool-btn__desc">
+                        ClickUp was used to manage tasks, assign
+                        responsibilities, and track workflow execution across
+                        the project lifecycle.
+                      </p>
+                      <h4 class="software-tool-btn__section-title">
+                        How We Used It
+                      </h4>
+                      <ul class="software-tool-btn__list">
+                        <li>
+                          created task lists for each phase of the project
+                        </li>
+                        <li>
+                          assigned responsibilities to team members with clear
+                          ownership
+                        </li>
+                        <li>
+                          tracked completion status of deliverables and
+                          milestones
+                        </li>
+                        <li>organized workflows into structured stages</li>
+                        <li>monitored progress across all active tasks</li>
+                      </ul>
+                      <h4 class="software-tool-btn__section-title">
+                        Project Management Impact
+                      </h4>
+                      <ul class="software-tool-btn__list">
+                        <li>ensured accountability for all team members</li>
+                        <li>
+                          improved visibility into task progress and completion
+                        </li>
+                        <li>
+                          prevented delays by tracking responsibilities in real
+                          time
+                        </li>
+                        <li>supported structured workflow management</li>
+                        <li>
+                          enhanced consistency in execution across all phases
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="software-tool-btn__back-media-col">
+                      <div class="software-tool-btn__media-frame">
+                        <img
+                          class="software-tool-btn__shot"
+                          src="gallery/clickup-in-use.png"
+                          alt="ClickUp in use screenshot"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </a>
+            <a
+              class="software-tool-btn software-tool-btn--manus"
+              href="https://manus.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Manus AI"
+              data-tool-name="Manus AI"
+            >
+              <span class="software-tool-btn__inner">
+                <span
+                  class="software-tool-btn__face software-tool-btn__face--front"
+                >
+                  <span class="software-tool-btn__icon" aria-hidden="true"
+                    ><img
+                      class="software-tool-btn__logo"
+                      src="logos/manus-logo.png?v=3"
+                      alt=""
+                  /></span>
+                </span>
+                <span
+                  class="software-tool-btn__face software-tool-btn__face--back"
+                >
+                  <div class="software-tool-btn__back-split">
+                    <div class="software-tool-btn__back-text-col">
+                      <strong class="software-tool-btn__back-title"
+                        >Manus AI — AI Workflow Integration and Execution
+                        Support</strong
+                      >
+                      <p class="software-tool-btn__desc">
+                        Manus AI was used to support AI-driven workflows,
+                        enhancing efficiency and enabling structured execution
+                        across the project.
+                      </p>
+                      <h4 class="software-tool-btn__section-title">
+                        How We Used It
+                      </h4>
+                      <ul class="software-tool-btn__list">
+                        <li>
+                          assisted in automating parts of the workflow where
+                          applicable
+                        </li>
+                        <li>
+                          supported execution efficiency by reducing manual
+                          processes
+                        </li>
+                        <li>
+                          enhanced integration of AI into project systems and
+                          operations
+                        </li>
+                        <li>
+                          contributed to structuring workflows in a more
+                          streamlined manner
+                        </li>
+                        <li>
+                          supported task completion through AI-assisted
+                          processes
+                        </li>
+                      </ul>
+                      <h4 class="software-tool-btn__section-title">
+                        Project Management Impact
+                      </h4>
+                      <ul class="software-tool-btn__list">
+                        <li>
+                          improved overall efficiency across project operations
+                        </li>
+                        <li>reduced manual workload and repetitive tasks</li>
+                        <li>
+                          strengthened integration of AI into real-world
+                          execution
+                        </li>
+                        <li>supported smoother workflow coordination</li>
+                        <li>enhanced the scalability of the project system</li>
+                      </ul>
+                    </div>
+                    <div class="software-tool-btn__back-media-col">
+                      <div class="software-tool-btn__media-frame">
+                        <img
+                          class="software-tool-btn__shot"
+                          src="gallery/manus-in-use.png"
+                          alt="Manus AI in use screenshot"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
 
+      <section
+        class="slide slide--d deck-title-slide"
+        id="slide-d"
+        aria-roledescription="slide"
+        aria-label="4 of 5: Evaluating Project Results — Beyond the Numbers"
+        aria-hidden="true"
+      >
+        <div class="margin-rail" aria-hidden="true"></div>
+        <div class="content">
+          <p class="deck-title-slide__eyebrow">Outcomes &amp; impact</p>
+          <h2 class="deck-title-slide__title">
+            Evaluating Project Results - Beyond the Numbers
+          </h2>
+          <p class="evaluation-email-hint">Tap any screenshot to expand</p>
           <section
-            class="slide slide--e"
-            id="slide-e"
-            aria-roledescription="slide"
-            aria-label="5 of 5: Thank You"
-            aria-hidden="true"
+            class="evaluation-email-collage"
+            aria-label="Email evidence screenshots"
           >
-            <div class="thank-you-stage">
-              <div
-                class="thank-you-bg thank-you-bg--collage"
-                aria-hidden="true"
-              ></div>
-              <div class="thank-you-vignette" aria-hidden="true"></div>
-            </div>
-            <div class="content thank-you-content">
-              <h2 class="thank-you-title">Thank You</h2>
-            </div>
+            <figure class="evaluation-email-card evaluation-email-card--a">
+              <img
+                src="gallery/email-screenshot-1.png"
+                alt="Email screenshot 1"
+              />
+              <figcaption class="evaluation-email-label">
+                Email Screenshot 1
+              </figcaption>
+            </figure>
+            <figure class="evaluation-email-card evaluation-email-card--b">
+              <img
+                src="gallery/email-screenshot-2.png"
+                alt="Email screenshot 2"
+              />
+              <figcaption class="evaluation-email-label">
+                Email Screenshot 2
+              </figcaption>
+            </figure>
+            <figure class="evaluation-email-card evaluation-email-card--c">
+              <img
+                src="gallery/email-screenshot-3.png"
+                alt="Email screenshot 3"
+              />
+              <figcaption class="evaluation-email-label">
+                Email Screenshot 3
+              </figcaption>
+            </figure>
           </section>
         </div>
+      </section>
 
-        <nav class="deck-nav" aria-label="Slide navigation">
-          <button
-            type="button"
-            class="deck-nav__btn deck-nav__btn--prev"
-            id="nav-prev"
-            aria-label="Previous slide"
-            disabled
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.4"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M15 6l-6 6 6 6" />
-            </svg>
-          </button>
-          <span class="deck-nav__count" id="nav-count" aria-live="polite"
-            >1 / 5</span
-          >
-          <button
-            type="button"
-            class="deck-nav__btn deck-nav__btn--next"
-            id="nav-next"
-            aria-label="Next slide"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.4"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              aria-hidden="true"
-            >
-              <path d="M9 6l6 6-6 6" />
-            </svg>
-          </button>
-        </nav>
-      </div>
+      <section
+        class="slide slide--e"
+        id="slide-e"
+        aria-roledescription="slide"
+        aria-label="5 of 5: Thank You"
+        aria-hidden="true"
+      >
+        <div class="thank-you-stage">
+          <div
+            class="thank-you-bg thank-you-bg--collage"
+            aria-hidden="true"
+          ></div>
+          <div class="thank-you-vignette" aria-hidden="true"></div>
+        </div>
+        <div class="content thank-you-content">
+          <h2 class="thank-you-title">Thank You</h2>
+        </div>
+      </section>
     </div>
+
+    <nav class="deck-nav" aria-label="Slide navigation">
+      <button
+        type="button"
+        class="deck-nav__btn deck-nav__btn--prev"
+        id="nav-prev"
+        aria-label="Previous slide"
+        disabled
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M15 6l-6 6 6 6" />
+        </svg>
+      </button>
+      <span class="deck-nav__count" id="nav-count" aria-live="polite"
+        >1 / 5</span
+      >
+      <button
+        type="button"
+        class="deck-nav__btn deck-nav__btn--next"
+        id="nav-next"
+        aria-label="Next slide"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.4"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M9 6l6 6-6 6" />
+        </svg>
+      </button>
+    </nav>
 
     <div id="email-lightbox" class="email-lightbox" hidden>
       <button
@@ -4267,36 +4203,6 @@
 
         let index = 0;
         let busy = false;
-
-        function fitDeckToViewport() {
-          if (!deckStage) return;
-          const vv = window.visualViewport;
-          const viewportWidth = vv ? vv.width : window.innerWidth;
-          const viewportHeight = vv ? vv.height : window.innerHeight;
-          const designWidth = 1366;
-          const designHeight = 1024;
-          const scale = Math.max(
-            0.01,
-            Math.min(
-              viewportWidth / designWidth,
-              viewportHeight / designHeight,
-            ),
-          );
-          const offsetX = Math.round(
-            (viewportWidth - designWidth * scale) * 0.5,
-          );
-          const offsetY = Math.round(
-            (viewportHeight - designHeight * scale) * 0.5,
-          );
-          deckStage.style.transform =
-            "translate(" +
-            offsetX +
-            "px, " +
-            offsetY +
-            "px) scale(" +
-            scale +
-            ")";
-        }
         function closeSoftwareCards() {
           softwareToolCards.forEach((card) => {
             card.classList.remove("is-open");
